@@ -1,0 +1,27 @@
+footer {
+    font-size: 10px;
+    padding-top: 20px;
+}
+.data {
+    color: #363;
+    padding-left: 6px;
+}
+.tr {
+    text-align: top;
+}
+.td {
+    height: 50px;
+    vertical-align: top;
+    border:1px solid black;
+    padding:5px;
+}
+.cell {
+    vertical-align: top;
+    display: table-cell;
+}
+.columns-container {
+    display: table-cell;
+    height: 100%;
+    width:600px;
+    text-align: top;
+}

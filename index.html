@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Numerals Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <base href=".">
+    <div id="content"></div>
+    <script id="request-template" type="text/x-handlebars-template">
+    <form id="form">
+        <div class="container">
+        <p>Please enter a number (between 0 to 100) to convert.</p>
+        <hr>
+        <label for="number-label"><b>Number</b></label>
+        <input type="text" placeholder="Ex.: 12" name="number" id="number" required>
+        <hr>
+        <button id="submit" type="button" class="registerbtn">Convert!</button>
+        </div>
+    </form> 
+    </script>
+
+    <script id="result-template" type="text/x-handlebars-template">
+        <div class="container">
+            <p>The result of the conversion is: <b>{{result}}</b></p>
+            <output id="result" name="result" class="data"></output>
+        </div>
+    </script>
+
+    <script id="error-template" type="text/x-handlebars-template">
+        <p>{{status}} - {{statusText}} error.</p>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.3.3/dist/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script type="application/javascript" src="main.js"></script>
+</body>
+</html>
