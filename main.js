@@ -69,7 +69,7 @@ function showInfo(data) {
 function showError(error) {
     const error_data = {
       'status': error.status,
-      'statusText': error.statusText
+      'statusText': error.responseText
     };
     const source = $("#error-template").html();
     const template = Handlebars.compile(source);
